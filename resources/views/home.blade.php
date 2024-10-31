@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    {{-- Boostrap Icons --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     {{-- My Style --}}
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -49,6 +51,11 @@
                             <a class="nav-link" href="#contact">Hubungi Kami</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -68,66 +75,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Tentang Kami Section -->
-    {{-- <section id="about" class="about py-5">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
-                    <h2 class="fw-bold mb-4">Tentang Kami</h2>
-                    <p class="lead">
-                        Kami adalah penyelenggara kegiatan kelas bermain untuk anak-anak, bertujuan mendukung tumbuh
-                        kembang mereka melalui aktivitas yang bermanfaat, aman, dan menyenangkan.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Tim Pengajar -->
-            <div class="row mt-5">
-                <h3 class="mb-4 text-center">Tim Pengajar Kami</h3>
-
-                <!-- Profil Tim 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="img/instructor1.jpg" class="card-img-top" alt="Pengajar 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Bapak A</h5>
-                            <p class="card-text">
-                                Berpengalaman di bidang pendidikan anak usia dini selama lebih dari 10 tahun.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Profil Tim 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="img/instructor2.jpg" class="card-img-top" alt="Pengajar 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Ibu B</h5>
-                            <p class="card-text">
-                                Spesialis dalam kegiatan seni dan kreativitas untuk anak-anak.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Profil Tim 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="img/instructor3.jpg" class="card-img-top" alt="Pengajar 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Bapak C</h5>
-                            <p class="card-text">
-                                Ahli dalam kegiatan motorik dan perkembangan fisik anak usia dini.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
 
 
     <!-- Tentang Kami Section dengan Tim Pengajar -->
@@ -230,94 +177,67 @@
         </div>
     </section>
 
-
-
-
-    {{-- <!-- Portfolio / Galeri Section -->
-    <section id="portfolio" class="portfolio py-5">
+    <!-- Layanan / Kelas yang Ditawarkan Section -->
+    <section id="services" class="services bg-light py-5">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8">
-                    <h2 class="fw-bold mb-4">Portfolio</h2>
+                    <h2 class="fw-bold mb-4">Layanan Kami</h2>
                     <p class="lead">
-                        Berikut adalah beberapa momen yang telah kami abadikan dari kegiatan kelas bermain untuk
-                        anak-anak.
+                        Kami menawarkan berbagai kelas bermain yang mendukung tumbuh kembang anak secara menyenangkan
+                        dan edukatif.
                     </p>
                 </div>
             </div>
 
-            <!-- Galeri Gambar -->
-            <div class="row g-4 mt-5">
-                <!-- Gambar 1 -->
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="https://th.bing.com/th/id/OIP.-ToGaI0lIKg0tW9NvgR7wQHaE8?w=1024&h=683&rs=1&pid=ImgDetMain"
-                            class="img-fluid rounded" alt="Event 1" data-bs-toggle="modal"
-                            data-bs-target="#portfolioModal1">
+            <!-- Daftar Kelas -->
+            <div class="row mt-5">
+                <!-- Kelas Seni -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/kelas_seni.jpg" class="card-img-top" alt="Kelas Seni">
+                        <div class="card-body">
+                            <h5 class="card-title">Kelas Seni</h5>
+                            <p class="card-text">
+                                Mengembangkan kreativitas anak melalui kegiatan melukis, menggambar, dan bermain warna.
+                                Kelas ini dirancang untuk membantu anak berekspresi dan memahami seni sejak dini.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Gambar 2 -->
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="https://th.bing.com/th/id/OIP.sVkV1KkxHz_MzTcewhnaNQHaE8?w=2560&h=1709&rs=1&pid=ImgDetMain"
-                            class="img-fluid rounded" alt="Event 2" data-bs-toggle="modal"
-                            data-bs-target="#portfolioModal2">
+                <!-- Kelas Motorik -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/kelas_motorik.jpg" class="card-img-top" alt="Kelas Motorik">
+                        <div class="card-body">
+                            <h5 class="card-title">Kelas Motorik</h5>
+                            <p class="card-text">
+                                Kegiatan yang melatih kemampuan motorik kasar dan halus anak. Dilengkapi dengan alat
+                                permainan edukatif yang membantu anak aktif dan mengembangkan keterampilan motorik.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Gambar 3 -->
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="https://dp4g669tqdae4.cloudfront.net/content/uploads/2020/11/Multi-ethnic-group-of-students-in-class-1168223009_1258x838.jpeg"
-                            class="img-fluid rounded" alt="Event 3" data-bs-toggle="modal"
-                            data-bs-target="#portfolioModal3">
+                <!-- Kelas Bermain Peran -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/kelas_bermain_peran.jpg" class="card-img-top" alt="Kelas Bermain Peran">
+                        <div class="card-body">
+                            <h5 class="card-title">Kelas Bermain Peran</h5>
+                            <p class="card-text">
+                                Anak-anak dapat bermain peran sebagai dokter, chef, atau profesi lainnya. Kegiatan ini
+                                bertujuan untuk meningkatkan imajinasi dan keterampilan sosial anak.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Modals -->
-    <!-- Modal 1 -->
-    <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="https://th.bing.com/th/id/OIP.-ToGaI0lIKg0tW9NvgR7wQHaE8?w=1024&h=683&rs=1&pid=ImgDetMain"
-                        class="img-fluid w-100" alt="Event 1">
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Modal 2 -->
-    <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="https://th.bing.com/th/id/OIP.sVkV1KkxHz_MzTcewhnaNQHaE8?w=2560&h=1709&rs=1&pid=ImgDetMain"
-                        class="img-fluid w-100" alt="Event 2">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3Label"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="https://dp4g669tqdae4.cloudfront.net/content/uploads/2020/11/Multi-ethnic-group-of-students-in-class-1168223009_1258x838.jpeg"
-                        class="img-fluid" alt="Event 3">
-                </div>
-            </div>
-        </div>
-    </div> --}}
 
     <!-- Portfolio / Galeri Section -->
     <section id="portfolio" class="portfolio py-5">
@@ -406,7 +326,6 @@
             </div>
         </div>
     </div>
-
 
 
     <!-- Blog / Artikel Section -->
