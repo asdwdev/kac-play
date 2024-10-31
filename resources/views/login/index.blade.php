@@ -15,6 +15,7 @@
 
     {{-- My Style --}}
     <link rel="stylesheet" href="css/auth.css">
+
 </head>
 
 <body>

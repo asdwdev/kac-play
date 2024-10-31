@@ -3,8 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="KAC Play menyediakan kelas bermain untuk anak, membantu tumbuh kembang secara kreatif dan menyenangkan.">
+    <meta name="keywords"
+        content="kac play, kelas bermain, kelas main bekasi, kelas main tambun, kelas main cibitung, kelas main cikarang, kelas main jababeka, kelas bermain anak, kelas bermain bekasi, kelas bermain cibitung, kelas bermain cikarang, kelas bermain tambun, baby class bekasi, sensory class bekasi, cooking class, field trip anak bekasi, field trip anak jakarta, making pizza for kids, event anak, event anak jakarta, event anak bekasi, kelas main anak">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Organizer - Kelas Bermain Anak</title>
+    <title>KAC Play - Kelas Bermain Anak</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,13 +19,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     {{-- My Style --}}
     <link rel="stylesheet" href="styles.css">
+
+    <style></style>
 </head>
 
-<body>
+<body style="margin-top: 50px">
 
     <!-- Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">KAC Play</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -329,7 +336,7 @@
 
 
     <!-- Blog / Artikel Section -->
-    <section id="blog" class="blog py-5">
+    <section id="blog" class="blog bg-light py-5">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8">
@@ -393,7 +400,7 @@
 
 
     <!-- Jadwal & Registrasi Kelas Section -->
-    <section id="schedule" class="schedule bg-light py-5">
+    <section id="schedule" class="schedule py-5">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8">
@@ -482,7 +489,7 @@
 
 
     <!-- Hubungi Kami Section -->
-    <section id="contact" class="contact py-5">
+    <section id="contact" class="contact bg-light py-5">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8">
@@ -578,6 +585,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+
+    <script src="js/script.js"></script>
 
 </body>
 
