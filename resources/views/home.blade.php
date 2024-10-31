@@ -577,7 +577,7 @@
                 </div>
             </div>
             <div class="mt-4 text-center">
-                <p class="mb-0">&copy; 2024 Event Organizer. Semua Hak Dilindungi.</p>
+                <p class="mb-0">&copy; 2024 KAC Play. Semua Hak Dilindungi.</p>
             </div>
         </div>
     </footer>
