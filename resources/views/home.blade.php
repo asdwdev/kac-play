@@ -1,73 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.main')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description"
-        content="KAC Play menyediakan kelas bermain untuk anak, membantu tumbuh kembang secara kreatif dan menyenangkan.">
-    <meta name="keywords"
-        content="kac play, kelas bermain, kelas main bekasi, kelas main tambun, kelas main cibitung, kelas main cikarang, kelas main jababeka, kelas bermain anak, kelas bermain bekasi, kelas bermain cibitung, kelas bermain cikarang, kelas bermain tambun, baby class bekasi, sensory class bekasi, cooking class, field trip anak bekasi, field trip anak jakarta, making pizza for kids, event anak, event anak jakarta, event anak bekasi, kelas main anak">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAC Play - Kelas Bermain Anak</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    {{-- Boostrap Icons --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    {{-- My Style --}}
-    <link rel="stylesheet" href="styles.css">
-
-    <style></style>
-</head>
-
-<body style="margin-top: 50px">
-
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">KAC Play</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Tentang Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Layanan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#schedule">Jadwal & Registrasi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Hubungi Kami</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login"><i class="bi bi-box-arrow-in-right"></i> Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+@section('container')
     <!-- Hero Section -->
     <section id="home" class="hero bg-primary py-5 text-center text-white">
         <div class="container">
@@ -169,14 +102,12 @@
 
                 <!-- Kontrol Carousel -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#instructorCarousel"
-                    data-bs-slide="prev"
-                    style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;">
+                    data-bs-slide="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#instructorCarousel"
-                    data-bs-slide="next"
-                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;">
+                    data-bs-slide="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -349,11 +280,11 @@
             </div>
 
             <!-- Daftar Artikel -->
-            <div class="row g-4 mt-5">
+            <div class="row g-4 my-5">
                 <!-- Artikel 1 -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="img/artikel1.jpg" class="card-img-top" alt="Artikel 1">
+                        <img src="/img/artikel-img.jpg" class="card-img-top" alt="Artikel 1">
                         <div class="card-body">
                             <h5 class="card-title">Pentingnya Bermain untuk Tumbuh Kembang Anak</h5>
                             <p class="card-text">
@@ -368,7 +299,7 @@
                 <!-- Artikel 2 -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="img/artikel2.jpg" class="card-img-top" alt="Artikel 2">
+                        <img src="/img/artikel-img.jpg" class="card-img-top" alt="Artikel 2">
                         <div class="card-body">
                             <h5 class="card-title">Ide Kegiatan Kreatif untuk Anak di Rumah</h5>
                             <p class="card-text">
@@ -383,7 +314,7 @@
                 <!-- Artikel 3 -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="img/artikel3.jpg" class="card-img-top" alt="Artikel 3">
+                        <img src="/img/artikel-img.jpg" class="card-img-top" alt="Artikel 3">
                         <div class="card-body">
                             <h5 class="card-title">Mengapa Interaksi Sosial Penting bagi Anak?</h5>
                             <p class="card-text">
@@ -395,6 +326,7 @@
                     </div>
                 </div>
             </div>
+            <a href="/posts" class="text-decoration-none">Lihat Semua Postingan</a>
         </div>
     </section>
 
@@ -456,8 +388,8 @@
                     <form>
                         <div class="mb-3">
                             <label for="childName" class="form-label">Nama Anak</label>
-                            <input type="text" class="form-control" id="childName"
-                                placeholder="Masukkan nama anak" required>
+                            <input type="text" class="form-control" id="childName" placeholder="Masukkan nama anak"
+                                required>
                         </div>
                         <div class="mb-3">
                             <label for="parentName" class="form-label">Nama Orang Tua</label>
@@ -527,13 +459,13 @@
                     <form>
                         <div class="mb-3">
                             <label for="name" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="name"
-                                placeholder="Masukkan nama Anda" required>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda"
+                                required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email"
-                                placeholder="Masukkan email Anda" required>
+                            <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda"
+                                required>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Pesan</label>
@@ -545,49 +477,4 @@
             </div>
         </div>
     </section>
-
-
-    <!-- Footer Section -->
-    <footer class="footer bg-dark py-4 text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5 class="fw-bold">Tentang Kami</h5>
-                    <p>
-                        Kami adalah penyelenggara kelas bermain untuk anak-anak, berkomitmen untuk memberikan pengalaman
-                        belajar yang menyenangkan dan mendidik.
-                    </p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <h5 class="fw-bold">Media Sosial</h5>
-                    <a href="#" class="me-3 text-white">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="me-3 text-white">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" class="text-white">
-                        <i class="bi bi-twitter"></i>
-                    </a>
-                </div>
-                <div class="col-md-4 text-end">
-                    <h5 class="fw-bold">Kontak</h5>
-                    <p>Email: email@contoh.com</p>
-                    <p>Telepon: +62 812-3456-7890</p>
-                </div>
-            </div>
-            <div class="mt-4 text-center">
-                <p class="mb-0">&copy; 2024 KAC Play. Semua Hak Dilindungi.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-
-    <script src="js/script.js"></script>
-
-</body>
-
-</html>
+@endsection
