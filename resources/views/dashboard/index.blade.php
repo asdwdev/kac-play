@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('dashboard.layouts.main')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>welcome sandhika</h1>
-
-    <form action="/logout" method="post">
-        @csrf
-        <button type="submit">
-            Logout</button>
-    </form>
-</body>
-
-</html>
+@section('container')
+    <div class="d-flex justify-content-between flex-md-nowrap align-items-center border-bottom mb-3 flex-wrap pb-2 pt-3">
+        <h1 class="h2">Welcome back, {{ auth()->user()->name }}</h1>
+    </div>
+@endsection
