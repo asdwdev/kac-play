@@ -385,7 +385,7 @@
             <div class="row mt-5">
                 <div class="col-lg-8 mx-auto">
                     <h3 class="mb-3 text-center">Formulir Registrasi</h3>
-                    <form>
+                    <form action="/registration" method="post">
                         <div class="mb-3">
                             <label for="childName" class="form-label">Nama Anak</label>
                             <input type="text" class="form-control" id="childName" placeholder="Masukkan nama anak"
